@@ -1,4 +1,4 @@
-//
+
 //  Robot.h
 //  objective-c_hw4
 //
@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Robot : NSObject
 
-@end
+@property (nonatomic, assign) NSInteger x;
+@property (nonatomic, assign) NSInteger y;
 
+- (void)run:(void (^)(NSString *direction))block;
+
+@end
 NS_ASSUME_NONNULL_END
